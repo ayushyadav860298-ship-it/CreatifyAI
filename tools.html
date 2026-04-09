@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Viral Content Generator - CreateAIHub | Free AI Tools</title>
+    <meta name="description" content="Generate viral YouTube titles, SEO descriptions, tags, hashtags, thumbnail prompts, and video ideas. Free AI-powered tools for YouTube creators.">
+    <meta name="keywords" content="YouTube title generator, viral content, YouTube SEO, thumbnail ideas, video ideas, content creation, YouTube growth, tags generator">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "YouTube Content Generation Tools",
+        "description": "Collection of AI tools for creating viral YouTube content",
+        "url": "https://createaihub.com/tools.html",
+        "numberOfItems": 6,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Viral Title Generator",
+                "description": "Generate click-worthy YouTube titles that maximize CTR"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Description Generator",
+                "description": "Create SEO-optimized YouTube descriptions with timestamps and CTAs"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Tags & Hashtags Generator",
+                "description": "Generate trending tags and hashtags for YouTube discoverability"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Thumbnail Prompt Generator",
+                "description": "Get AI-generated thumbnail ideas with high CTR potential"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Viral Idea Generator",
+                "description": "Generate unique video ideas that have viral potential"
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "QR Code Generator",
+                "description": "Generate QR codes for URLs, text, email, and WiFi"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://createaihub.com/tools.html" />
+    
+    <!-- Same head content as index.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>CreateAIHub</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html" class="active">Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#tools-grid" class="btn-primary nav-cta">Generate Content</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tools Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">YouTube Viral Content Generator</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Create click-worthy titles, SEO descriptions, trending tags, and thumbnail ideas that maximize views and engagement.</p>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="section" id="tools-grid">
+        <div class="container">
+            <div class="tools-filter">
+                <button class="filter-btn active" data-filter="all">All Tools</button>
+                <button class="filter-btn" data-filter="titles">Titles</button>
+                <button class="filter-btn" data-filter="descriptions">Descriptions</button>
+                <button class="filter-btn" data-filter="seo">SEO Tools</button>
+                <button class="filter-btn" data-filter="ideas">Video Ideas</button>
+                <button class="filter-btn" data-filter="utility">Utility</button>
+            </div>
+            
+            <div class="tools-container">
+                <!-- YouTube Title Generator -->
+                <div class="tool-item" data-category="titles" id="youtube-title" data-aos="fade-up">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #FF0000, #FF6B6B);">
+                            <i class="fas fa-heading"></i>
+                        </div>
+                        <h3>Viral Title Generator</h3>
+                    </div>
+                    <p>Generate click-worthy YouTube titles using proven viral frameworks. Every generation is unique with anti-repetition system.</p>
+                    
+                    <div class="tool-form">
+                        <div class="form-group">
+                            <label for="videoTopic"><i class="fas fa-video"></i> Video Topic / Content</label>
+                            <input type="text" id="videoTopic" placeholder="e.g., Morning routine, iPhone review, Gaming strategy">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="videoCategory"><i class="fas fa-filter"></i> Video Category</label>
+                            <select id="videoCategory">
+                                <option value="tutorial">📚 Tutorial/How-to</option>
+                                <option value="review">⭐ Review</option>
+                                <option value="entertainment">🎬 Entertainment</option>
+                                <option value="vlog">📹 Vlog</option>
+                                <option value="educational">🧠 Educational</option>
+                                <option value="gaming">🎮 Gaming</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn-primary" onclick="generateViralTitles()" id="titleBtn">
+                            <i class="fas fa-bolt"></i> Generate Viral Titles
+                        </button>
+                    </div>
+                    
+                    <div class="tool-output" id="titleOutput">
+                        <h4><i class="fab fa-youtube" style="color: #FF0000;"></i> Viral YouTube Titles:</h4>
+                        <div class="output-content" id="titleContent">
+                            <!-- Titles will appear here -->
+                        </div>
+                        <div class="mt-3" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-secondary" onclick="copyTitleContent()">
+                                <i class="fas fa-copy"></i> Copy All Titles
+                            </button>
+                            <button class="btn-secondary" onclick="regenerateTitles()">
+                                <i class="fas fa-redo"></i> Generate New Set
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- YouTube Description Generator -->
+                <div class="tool-item" data-category="descriptions" id="youtube-description" data-aos="fade-up">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #28a745, #20c997);">
+                            <i class="fas fa-align-left"></i>
+                        </div>
+                        <h3>Description Generator</h3>
+                    </div>
+                    <p>Create SEO-optimized YouTube descriptions with timestamps, CTAs, and viral hooks. Generates 3 unique versions.</p>
+                    
+                    <div class="tool-form">
+                        <div class="form-group">
+                            <label for="descTopic"><i class="fas fa-heading"></i> Video Topic / Title</label>
+                            <input type="text" id="descTopic" placeholder="Enter your video topic or title">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="keyPoints"><i class="fas fa-list-ol"></i> Key Points / Timestamps (one per line)</label>
+                            <textarea id="keyPoints" rows="4" placeholder="List key points or timestamps for your video"></textarea>
+                            <div class="char-count">
+                                Characters: <span id="keyPointsCount">0</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary" onclick="generateViralDescriptions()" id="descBtn">
+                            <i class="fas fa-magic"></i> Generate Descriptions
+                        </button>
+                    </div>
+                    
+                    <div class="tool-output" id="descOutput">
+                        <h4><i class="fas fa-search"></i> SEO-Optimized Descriptions:</h4>
+                        <div class="output-content" id="descContent">
+                            <!-- Descriptions will appear here -->
+                        </div>
+                        <div class="mt-3" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-secondary" onclick="copyDescContent()">
+                                <i class="fas fa-copy"></i> Copy All Versions
+                            </button>
+                            <button class="btn-secondary" onclick="regenerateDescriptions()">
+                                <i class="fas fa-redo"></i> Generate New Versions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- YouTube Tags & Hashtags Generator -->
+                <div class="tool-item" data-category="seo" id="youtube-tags" data-aos="fade-up">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #17a2b8, #0dcaf0);">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>Tags & Hashtags Generator</h3>
+                    </div>
+                    <p>Generate trending tags and hashtags that boost discoverability and algorithm reach. Context-aware generation.</p>
+                    
+                    <div class="tool-form">
+                        <div class="form-group">
+                            <label for="tagsTopic"><i class="fas fa-hashtag"></i> Video Topic / Niche</label>
+                            <input type="text" id="tagsTopic" placeholder="e.g., Fitness tips, Tech review, Cooking tutorial">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tagsCount">Number of Tags</label>
+                            <select id="tagsCount">
+                                <option value="10">10 Tags</option>
+                                <option value="15" selected>15 Tags</option>
+                                <option value="20">20 Tags</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn-primary" onclick="generateTagsAndHashtags()" id="tagsBtn">
+                            <i class="fas fa-hashtag"></i> Generate Tags & Hashtags
+                        </button>
+                    </div>
+                    
+                    <div class="tool-output" id="tagsOutput">
+                        <h4><i class="fas fa-trending-up"></i> Trending Tags & Hashtags:</h4>
+                        <div class="output-content" id="tagsContent">
+                            <!-- Tags will appear here -->
+                        </div>
+                        <div class="mt-3" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-secondary" onclick="copyTagsContent()">
+                                <i class="fas fa-copy"></i> Copy All Tags
+                            </button>
+                            <button class="btn-secondary" onclick="regenerateTags()">
+                                <i class="fas fa-redo"></i> Generate New Set
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Thumbnail Prompt Generator -->
+                <div class="tool-item" data-category="seo" id="thumbnail-prompt" data-aos="fade-up">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #fd7e14, #ffc107);">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Thumbnail Prompt Generator</h3>
+                    </div>
+                    <p>Get AI-generated thumbnail ideas with emotions, facial expressions, and bold text for high CTR.</p>
+                    
+                    <div class="tool-form">
+                        <div class="form-group">
+                            <label for="thumbnailTopic"><i class="fas fa-palette"></i> Video Topic / Theme</label>
+                            <input type="text" id="thumbnailTopic" placeholder="e.g., Workout results, Product unboxing, Gaming victory">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="thumbnailCount">Number of Prompts</label>
+                            <select id="thumbnailCount">
+                                <option value="3">3 Prompts</option>
+                                <option value="5" selected>5 Prompts</option>
+                                <option value="8">8 Prompts</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn-primary" onclick="generateThumbnailPrompts()" id="thumbnailBtn">
+                            <i class="fas fa-paint-brush"></i> Generate Thumbnail Ideas
+                        </button>
+                    </div>
+                    
+                    <div class="tool-output" id="thumbnailOutput">
+                        <h4><i class="fas fa-eye"></i> High-CTR Thumbnail Prompts:</h4>
+                        <div class="output-content" id="thumbnailContent">
+                            <!-- Thumbnail prompts will appear here -->
+                        </div>
+                        <div class="mt-3" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-secondary" onclick="copyThumbnailContent()">
+                                <i class="fas fa-copy"></i> Copy All Prompts
+                            </button>
+                            <button class="btn-secondary" onclick="regenerateThumbnails()">
+                                <i class="fas fa-redo"></i> Generate New Prompts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Viral Idea Generator -->
+                <div class="tool-item" data-category="ideas" id="viral-ideas" data-aos="fade-up">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #6f42c1, #a370f7);">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Viral Idea Generator</h3>
+                    </div>
+                    <p>Generate unique video ideas with viral potential. Different frameworks every generation.</p>
+                    
+                    <div class="tool-form">
+                        <div class="form-group">
+                            <label for="viralNiche"><i class="fas fa-rocket"></i> Your Niche / Channel Focus</label>
+                            <input type="text" id="viralNiche" placeholder="e.g., Cooking, Gaming, Fitness, Tech reviews">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ideaCount">Number of Ideas</label>
+                            <select id="ideaCount">
+                                <option value="5">5 Ideas</option>
+                                <option value="8" selected>8 Ideas</option>
+                                <option value="12">12 Ideas</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn-primary" onclick="generateViralIdeas()" id="viralBtn">
+                            <i class="fas fa-virus"></i> Generate Viral Ideas
+                        </button>
+                    </div>
+                    
+                    <div class="tool-output" id="viralOutput">
+                        <h4><i class="fas fa-fire"></i> Viral Video Ideas:</h4>
+                        <div class="output-content" id="viralContent">
+                            <!-- Viral ideas will appear here -->
+                        </div>
+                        <div class="mt-3" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-secondary" onclick="copyViralContent()">
+                                <i class="fas fa-copy"></i> Copy All Ideas
+                            </button>
+                            <button class="btn-secondary" onclick="regenerateViralIdeas()">
+                                <i class="fas fa-redo"></i> Generate New Ideas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- QR Code Generator -->
+                <div class="tool-item" data-category="utility" id="qr-generator" data-aos="fade-up">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: linear-gradient(135deg, #20c997, #0dcaf0);">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h3>QR Code Generator</h3>
+                    </div>
+                    <p>Generate QR codes for URLs, text, contact info, WiFi, and more. Customizable size and colors.</p>
+                    
+                    <div class="tool-form">
+                        <div class="form-group">
+                            <label for="qrType">QR Code Type</label>
+                            <select id="qrType">
+                                <option value="url">Website URL</option>
+                                <option value="text">Plain Text</option>
+                                <option value="email">Email</option>
+                                <option value="wifi">WiFi</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="qrInputContainer">
+                            <!-- Dynamic input based on type -->
+                            <label for="qrData">Website URL</label>
+                            <input type="url" id="qrData" placeholder="https://example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="qrSize">QR Code Size</label>
+                            <select id="qrSize">
+                                <option value="150">150x150</option>
+                                <option value="200" selected>200x200</option>
+                                <option value="250">250x250</option>
+                                <option value="300">300x300</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn-primary" onclick="generateQRCode()" id="qrBtn">
+                            <i class="fas fa-qrcode"></i> Generate QR Code
+                        </button>
+                    </div>
+                    
+                    <div class="tool-output" id="qrOutput">
+                        <h4>Your QR Code:</h4>
+                        <div class="output-content text-center" id="qrcodeContainer">
+                            <div id="qrcode"></div>
+                            <p id="qrText"></p>
+                        </div>
+                        <div class="mt-3" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <button class="btn-secondary" onclick="downloadQRCode()" id="downloadQRBtn" style="display: none;">
+                                <i class="fas fa-download"></i> Download QR Code
+                            </button>
+                            <button class="btn-secondary" onclick="regenerateQRCode()">
+                                <i class="fas fa-redo"></i> Generate New QR Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SEO Content Section -->
+            <div class="seo-content" style="margin-top: 80px; padding: 40px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: var(--radius);" data-aos="fade-up">
+                <h2 style="color: var(--dark-color); margin-bottom: 20px;">Maximize Your YouTube Growth</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; font-size: 1.3rem;"><i class="fas fa-search"></i> SEO Optimization</h3>
+                        <p style="color: var(--gray-color); line-height: 1.6;">Our tools generate SEO-optimized content that helps YouTube's algorithm understand and promote your videos. Proper keyword placement, relevant tags, and optimized descriptions improve search rankings.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; font-size: 1.3rem;"><i class="fas fa-users"></i> Audience Engagement</h3>
+                        <p style="color: var(--gray-color); line-height: 1.6;">Viral frameworks and emotional triggers in our generated content increase viewer engagement. Higher CTR and watch time signal quality to YouTube's algorithm, leading to more recommendations.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px; font-size: 1.3rem;"><i class="fas fa-sync-alt"></i> Anti-Repetition System</h3>
+                        <p style="color: var(--gray-color); line-height: 1.6;">Every generation is unique. Our AI uses different frameworks, tones, and structures to prevent content fatigue and keep your channel fresh. No two outputs are ever the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-robot"></i>
+                        <span>CreateAIHub</span>
+                    </a>
+                    <p>AI-powered YouTube content generation tools. Create viral titles, descriptions, tags, and thumbnail ideas.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>YouTube Tools</h3>
+                    <ul>
+                        <li><a href="tools.html#youtube-title">Title Generator</a></li>
+                        <li><a href="tools.html#youtube-description">Description Generator</a></li>
+                        <li><a href="tools.html#youtube-tags">Tags Generator</a></li>
+                        <li><a href="tools.html#thumbnail-prompt">Thumbnail Prompts</a></li>
+                        <li><a href="tools.html#viral-ideas">Viral Ideas</a></li>
+                        <li><a href="tools.html#qr-generator">QR Code Generator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> support@createaihub.com</li>
+                        <li><i class="fas fa-globe"></i> www.createaihub.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CreateAIHub. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="sitemap.xml">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- QR Code Library -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tools.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Initialize tools page
+        document.addEventListener('DOMContentLoaded', function() {
+            initToolsPage();
+        });
+    </script>
+</body>
+</html>

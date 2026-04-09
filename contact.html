@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CreateAIHub | Get in Touch</title>
+    <meta name="description" content="Contact CreateAIHub team for support, partnership opportunities, or feedback on our AI tools.">
+    
+    <!-- Same head content as index.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>CreateAIHub</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <a href="tools.html" class="btn-primary nav-cta">Try Tools</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Contact Us</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Get in touch with our team for support, partnership opportunities, or feedback.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about our AI tools? Need support with a specific tool? Interested in partnership opportunities? We'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> support@createaihub.com</li>
+                            <li><i class="fas fa-envelope"></i> ayushyadav860298@gmail.com</li>
+                            <li><i class="fas fa-globe"></i> www.createaihub.com</li>
+                            <li><i class="fas fa-clock"></i> Response Time: 24-48 hours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="faq-preview">
+                        <h3>Common Questions</h3>
+                        <ul>
+                            <li><strong>Are your tools really free?</strong> Yes, all our tools are completely free to use.</li>
+                            <li><strong>Do I need to create an account?</strong> No account required for most tools.</li>
+                            <li><strong>Can I use generated content commercially?</strong> Yes, you own the content you generate.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Send us a Message</h3>
+                    
+                    <div id="formAlert" class="alert" style="display: none;"></div>
+                    
+                    <form id="contactForm" action="https://formspree.io/f/xpzvggdp" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Tool Feedback</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="bug">Report a Bug</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <div class="char-count">
+                                Characters: <span id="messageCharCount">0</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary" id="submitBtn">
+                            <span id="submitText">Send Message</span>
+                            <span id="submitSpinner" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-robot"></i>
+                        <span>CreateAIHub</span>
+                    </a>
+                    <p>AI-powered tools to help creators and professionals work smarter, faster, and more efficiently.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><a href="tools.html#resume-generator">Resume Generator</a></li>
+                        <li><a href="tools.html#youtube-title">YouTube Title Generator</a></li>
+                        <li><a href="tools.html#instagram-bio">Instagram Bio</a></li>
+                        <li><a href="tools.html#qr-generator">QR Code Generator</a></li>
+                        <li><a href="tools.html#password-generator">Password Generator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> support@createaihub.com</li>
+                        <li><i class="fas fa-globe"></i> www.createaihub.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CreateAIHub. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Character counter for message
+        const messageTextarea = document.getElementById('message');
+        const charCount = document.getElementById('messageCharCount');
+        
+        if (messageTextarea && charCount) {
+            messageTextarea.addEventListener('input', function() {
+                charCount.textContent = this.value.length;
+            });
+        }
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        const formAlert = document.getElementById('formAlert');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const submitSpinner = document.getElementById('submitSpinner');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                submitText.style.display = 'none';
+                submitSpinner.style.display = 'inline';
+                submitBtn.disabled = true;
+                
+                // Form data
+                const formData = new FormData(this);
+                
+                try {
+                    const response = await fetch(this.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        // Success
+                        formAlert.textContent = 'Thank you! Your message has been sent successfully.';
+                        formAlert.className = 'alert success';
+                        formAlert.style.display = 'block';
+                        
+                        // Reset form
+                        contactForm.reset();
+                        charCount.textContent = '0';
+                        
+                        // Scroll to alert
+                        formAlert.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                } catch (error) {
+                    // Error
+                    formAlert.textContent = 'Oops! There was a problem sending your message. Please try again.';
+                    formAlert.className = 'alert error';
+                    formAlert.style.display = 'block';
+                } finally {
+                    // Reset button state
+                    submitText.style.display = 'inline';
+                    submitSpinner.style.display = 'none';
+                    submitBtn.disabled = false;
+                    
+                    // Hide alert after 5 seconds
+                    setTimeout(() => {
+                        formAlert.style.display = 'none';
+                    }, 5000);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
